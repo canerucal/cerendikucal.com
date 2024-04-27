@@ -1,14 +1,69 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", sans-serif;
+  font-weight: 300;
+  background-color: #f3f5f9;
 }
 
 .info-bar-styler {
-    border: 1.5px solid #4285F4;
-    border-radius: 15px;
-    text-align: center;
-    line-height: 200%;
+  border: 1.5px solid #4285f4;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 200%;
 }
 
 .info-item {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.navbar .nav-item {
+  margin-right: 60px;
+  font-weight: 300;
+}
+
+.navbar .nav-item:last-child {
+  margin-right: 0;
+}
+
+.landing-styler {
+  margin-left: 10vw;
+}
+
+.landing-hero {
+  font-size: 80px;
+  font-weight: 400 !important;
+  color: #4285f4;
+}
+
+.landing-hero-two {
+  margin-top: -25px;
+}
+
+.landing-info {
+  width: 90%;
+}
+
+.about-us {
+  background-color: #4285f4;
+  min-width: 100vw;
+}
+
+.about-wrapper {
+  color: #ffffff;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.about-header {
+  font-size: 48px;
+}
+
+.about-text {
+  width: 60%;
+}
+
+.cert-wrapper {
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
