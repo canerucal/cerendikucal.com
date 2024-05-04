@@ -67,7 +67,8 @@ body {
 }
 
 .treatments,
-.comments {
+.comments,
+.faq {
   margin-left: 15vw;
   margin-right: 15vw;
   margin-top: 5vh;
@@ -91,4 +92,18 @@ body {
 .cure-text {
   font-size: 16px;
   text-align: start;
+}
+
+.contact-header {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.contact-area {
+  padding-left: 11vw;
+}
+
+.faq-header {
+  font-weight: 500;
 }
