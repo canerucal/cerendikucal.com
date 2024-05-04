@@ -42,9 +42,11 @@ body {
   width: 90%;
 }
 
-.about-us {
+.about-us,
+.gallery {
   background-color: #4285f4;
   min-width: 100vw;
+  padding-bottom: 10vh;
 }
 
 .about-wrapper {
@@ -55,7 +57,7 @@ body {
   padding-top: 5vh;
 }
 
-.about-header {
+.section-header {
   font-size: 48px;
 }
 
@@ -63,7 +65,29 @@ body {
   width: 60%;
 }
 
-.cert-wrapper {
-    margin-left: 7vw;
-    margin-right: 7vw;
+.treatments,
+.comments {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 5vh;
+}
+
+.cure-wrapper {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.first-row {
+  min-height: 350px;
+}
+
+.cure-header {
+  color: #4285f4;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.cure-text {
+  font-size: 16px;
+  text-align: start;
 }
