@@ -43,7 +43,8 @@ body {
 }
 
 .about-us,
-.gallery {
+.gallery,
+.contact {
   background-color: #4285f4;
   min-width: 100vw;
   padding-bottom: 10vh;
