@@ -79,7 +79,7 @@ body {
   border-radius: 15px;
 }
 
-.first-row {
+.row-height {
   min-height: 350px;
 }
 
@@ -106,4 +106,102 @@ body {
 
 .faq-header {
   font-weight: 500;
+}
+
+.mobile-container,
+.mobile-landing-item {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .mobile-container {
+    display: block;
+  }
+
+  nav {
+    display: none !important;
+  }
+
+  .mobile-hero {
+    color: #4285f4;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .mobile-info-bar {
+    width: 60vw;
+  }
+
+  .mobile-info-item {
+    margin-top: 2vh;
+  }
+
+  .landing {
+    display: none;
+  }
+
+  .mobile-landing-item {
+    display: block;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-wrapper {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .treatments,
+  .comments,
+  .faq,
+  .mobile-gallery-header,
+  .mobile-contact-header {
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+    margin-top: 2vh !important;
+  }
+
+  .mobile-contact-header {
+    padding-bottom: 2vh !important;
+  }
+
+  .cure-wrapper {
+    margin-top: 3vh;
+  }
+
+  .mobile-img {
+    width: 100%;
+    margin-top: 3vh;
+  }
+
+  .mobile-comments {
+    width: 100%;
+    margin-top: 3vh;
+  }
+
+  .contact-area {
+    padding-left: 5vw;
+    padding-top: 0px;
+  }
+
+  .mobile-map {
+    width: 100%;
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mobile-info-bar {
+    width: 70vw;
+  }
+
+  .mobile-hero-image {
+    width: 105%;
+  }
 }
