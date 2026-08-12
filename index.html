@@ -1,477 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ceren Dik Uçal</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Diş Hekimi Ceren Dik Uçal'ın Gölcük, Kocaeli'deki muayenehanesi. Koruyucu, estetik ve restoratif diş tedavileri."
     />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="icon" type="image/svg" href="img/logo.svg" />
+    <meta name="theme-color" content="#f8f6f0" />
+    <title>Diş Hekimi Ceren Dik Uçal | Gölcük</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg?v=4" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/index.css?v=8" />
   </head>
   <body>
-    <div class="container mobile-container mt-3">
-      <div class="row align-items-center justify-content-center ms-4">
-        <div class="col-auto">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" alt="site-logo" />
-          </a>
-        </div>
-        <div class="col">
-          <div class="mobile-hero">Diş Hekimi Ceren Dik Uçal</div>
-        </div>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#landing" aria-label="Anasayfa">
+          <img src="img/logo.svg?v=4" alt="" />
+          <span><strong>Ceren Dik Uçal</strong><small>Diş Hekimi</small></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Ana menü">
+          <a href="#about">Hakkımızda</a>
+          <a href="#treatments">Tedaviler</a>
+          <a href="#gallery">Klinik</a>
+          <a href="#comments">Hasta görüşleri</a>
+          <a href="#faq">SSS</a>
+        </nav>
+
+        <a class="header-action" href="tel:+905438234142">Randevu al <span>↗</span></a>
+
+        <details class="mobile-menu">
+          <summary aria-label="Menüyü aç"><span></span><span></span></summary>
+          <nav aria-label="Mobil menü">
+            <a href="#about">Hakkımızda</a>
+            <a href="#treatments">Tedaviler</a>
+            <a href="#gallery">Klinik</a>
+            <a href="#comments">Hasta görüşleri</a>
+            <a href="#contact">İletişim</a>
+            <a href="#faq">SSS</a>
+          </nav>
+        </details>
       </div>
-    </div>
-    <div class="container mobile-info-bar mt-3">
-      <div
-        class="row ms-sm-5 me-sm-5 text-center justify-content-between align-items-center"
-      >
-        <div
-          class="col-sm-3 mobile-info-item info-bar-styler align-content-center"
-        >
-          <a class="info-item d-flex" href="tel:+905438234142">
-            <img src="img/tel.svg " alt="telephone" />
-            <div style="margin-left: 25%">0543 823 41 42</div>
-          </a>
-        </div>
-        <div
-          class="col-sm-4 mobile-info-item info-bar-styler d-flex align-content-center"
-        >
-          <img src="img/clock.svg" alt="clock" />
-          <div style="margin-left: 10%; color: #4285f4">
-            <span style="font-weight: 700">Pzt-Cuma:</span> 10:00-18:00
-            <span style="font-weight: 700">Cmt:</span> 10:00-15:00
-          </div>
-        </div>
-        <div
-          class="col-sm-3 mobile-info-item info-bar-styler align-content-center"
-        >
-          <a
-            class="info-item d-flex"
-            href="https://maps.app.goo.gl/fZK8KxTGvMtkfTx38"
-            target="_blank"
-          >
-            <img src="img/map.svg " alt="telephone" />
-            <div style="margin-left: 20%">Konum için tıklayınız</div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <nav
-      id="navbar-example2"
-      class="navbar px-3 mb-3 mt-3 justify-content-center"
-    >
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.svg" alt="site-logo" />
-      </a>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#landing">Anasayfa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">Hakkımızda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#treatments">Tedaviler</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#gallery">Galeri</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#comments">Hasta Görüşleri</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">İletişim</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faq">SSS</a>
-        </li>
-      </ul>
-    </nav>
-    <div
-      data-bs-spy="scroll"
-      data-bs-target="#navbar-example2"
-      data-bs-root-margin="0px 0px -40%"
-      data-bs-smooth-scroll="true"
-      class="scrollspy-example rounded-2"
-      tabindex="0"
-    >
-      <div class="landing container" id="landin">
-        <div class="landing-styler d-flex">
-          <div class="hero-left mt-5">
-            <div class="landing-hero w-100">
-              <div class="row landing-hero-one">Diş Hekimi</div>
-              <div class="row landing-hero-two">Ceren Dik Uçal</div>
-            </div>
-            <div class="landing-info">
-              Gölcük Kocaeli’de bulunan kliniğimde Şubat 2020 yılından beri
-              tedavi hizmeti sunmaktayım. Dolgu, kanal tedavisi, diş beyazlatma,
-              diş temizliği, protez, diş çekimi, estetik dolgu,
-              zirkonyum/seramik kaplama ve diğer tedaviler için kaliteli bir
-              tedavi sunmayı hedefliyorum.
-            </div>
-          </div>
-          <div class="hero-right me-2 mb-2">
-            <img src="img/hero-image.svg" alt="hero-image" />
-          </div>
-        </div>
-      </div>
-      <div class="mobile-landing-item mt-4">
-        <img class="mobile-hero-image" src="img/hero-image.svg" alt="hero-image" />
-        <div class="landing-info ms-4">
-          Gölcük Kocaeli’de bulunan kliniğimde Şubat 2020 yılından beri tedavi
-          hizmeti sunmaktayım. Dolgu, kanal tedavisi, diş beyazlatma, diş
-          temizliği, protez, diş çekimi, estetik dolgu, zirkonyum/seramik
-          kaplama ve diğer tedaviler için kaliteli bir tedavi sunmayı
-          hedefliyorum.
-        </div>
-      </div>
-      <div class="about-us mt-4" id="about">
-        <div class="about-wrapper">
-          <div class="section-header">Hakkımızda</div>
-          <div class="about-text mt-3">
-            Diş Hekimi Ceren Dik Uçal, Bolu Abant İzzet Baysal Üniversitesi Diş
-            Hekimliği Fakültesinden 2016 yılında mezun olmuştur. 2016 yılından
-            beri Gölcük’te hastalarına hizmet vermektedir. Özel Ceren Dik Uçal
-            Muayenehanesi 2020 yılında kurulmuştur. Kurulduğu günden itibaren
-            hastalarına kaliteli ve güvenilir tedaviyi misyon edinmiştir.
-          </div>
-        </div>
-      </div>
-      <div class="treatments" id="treatments">
-        <div class="section-header mb-sm-4" style="color: #4285f4">
-          Tedaviler
-        </div>
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Kompozit Dolgu</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/dolgu.svg" alt="dolgu" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Kompozit dolgu, diş çürüklerini veya hasarlarını doğal diş
-                  rengine uygun bir reçine malzemesiyle onaran estetik ve etkili
-                  bir tedavi yöntemidir.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Kanal Tedavisi</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/kanal.svg" alt="kanal" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Kanal tedavisi, dişin iç kısmındaki enfekte veya hasarlı doku
-                  ve sinirleri temizleyip ardından dolgu ile doldurarak dişin
-                  korunmasını sağlayan bir tedavi yöntemidir.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Diş Temizliği</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/temizlik.svg" alt="temizlik" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Diş temizliği, diş yüzeylerindeki plak ve tartarın
-                  uzaklaştırıldığı, diş eti sağlığının korunduğu ve dişlerin
-                  parlaklığının yenilendiği önemli bir diş bakım prosedürüdür.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-4 justify-content-center text-center">
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Diş Beyazlatma</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/beyazlatma.svg" alt="beyazlatma" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Diş beyazlatma, dişlerin doğal rengini veya lekelerini
-                  azaltmak için kullanılan kozmetik bir tedavi yöntemidir,
-                  genellikle beyazlatıcı jeller veya solüsyonlar kullanılarak
-                  uygulanır.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Protez</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/protez.svg" alt="protez" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Protez diş, eksik dişlerin yerine konulması için yapılan ve
-                  ağızda sabit veya çıkarılabilir olarak kullanılan yapay
-                  dişlerdir.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Diş Çekimi</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/cekim.svg" alt="cekim" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Diş çekimi, dişin ağızdan çıkarılması işlemidir ve genellikle
-                  çürük, hasar veya diş yapısındaki sorunlar nedeniyle
-                  gerçekleştirilir.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-4 justify-content-center text-center">
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Estetik Dolgu</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/estetik.svg" alt="estetik" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Estetik dolgu, dişlerdeki küçük kırıkları, çatlakları veya
-                  boşlukları kapatmak, diş şeklini ve rengini düzeltmek için
-                  kullanılan bir tedavi yöntemidir, genellikle kompozit reçine
-                  malzemesi kullanılarak uygulanır.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Zirkonyum Kaplama</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/zirkonyum.svg" alt="zirkonyum" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Zirkonyum diş kaplama, dayanıklı ve doğal görünümlü bir diş
-                  kaplama malzemesi olan zirkonyum oksit kullanılarak yapılan
-                  bir tedavi yöntemidir, estetik bir görünüm sağlamanın yanı
-                  sıra uzun ömürlü bir çözüm sunar.
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="cure-wrapper row-height">
-                <div class="cure-header ps-3 pt-3">Seramik Kaplama</div>
-                <div class="cure-pic pt-2">
-                  <img src="img/seramik.svg" alt="seramik" />
-                </div>
-                <div class="cure-text ps-4 pe-4 pt-3 pb-3">
-                  Seramik diş kaplama, estetik bir görünüm elde etmek amacıyla
-                  dişlerin ön yüzeyine ince bir seramik tabakanın yapıştırılması
-                  işlemidir, dişlerin şeklini, rengini ve görünümünü
-                  iyileştirmek için kullanılır.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gallery mt-4" id="gallery">
-        <div class="gallery-wrapper">
-          <div
-            class="section-header mobile-gallery-header"
-            style="
-              margin-left: 15vw;
-              margin-right: 15vw;
-              padding-bottom: 5vh;
-              padding-top: 5vh;
-              color: #ffffff;
-            "
-          >
-            Galeri
-          </div>
-          <div class="container">
-            <div class="row text-center justify-content-center">
-              <div class="col-sm-5">
-                <img
-                  class="mobile-img"
-                  src="img/klinik1.svg"
-                  alt="klinik-foto1"
-                />
-              </div>
-              <div class="col-sm-5">
-                <img
-                  class="mobile-img"
-                  src="img/klinik2.svg"
-                  alt="klinik-foto2"
-                />
-              </div>
-            </div>
-            <div class="row mt-4 text-center justify-content-center">
-              <div class="col-sm-5">
-                <img
-                  class="mobile-img"
-                  src="img/klinik3.svg"
-                  alt="klinik-foto3"
-                />
-              </div>
-              <div class="col-sm-5">
-                <img
-                  class="mobile-img"
-                  src="img/klinik4.svg"
-                  alt="klinik-foto4"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="comments mb-4" id="comments">
-        <div class="section-header" style="color: #4285f4">Hasta Görüşleri</div>
-        <div class="container">
-          <div class="row mt-3">
-            <div class="col-sm-6">
-              <img
-                class="mobile-comments"
-                src="img/coskun.svg"
-                alt="comment1"
-              />
-            </div>
-            <div class="col-sm-6">
-              <img
-                class="mobile-comments"
-                src="img/tevfik.svg"
-                alt="comment2"
-              />
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-sm-6">
-              <img class="mobile-comments" src="img/ezgi.svg" alt="comment3" />
-            </div>
-            <div class="col-sm-6">
-              <img
-                class="mobile-comments"
-                src="img/serra.svg"
-                alt="comment4"
-              />
-            </div>
-          </div>
-          <div class="row mt-3 text-center">
-            <div class="col-sm-12">
-              <img class="mobile-comments" src="img/aysel.svg" alt="comment5" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contact mt-2" id="contact">
-        <div
-          class="section-header mobile-contact-header"
-          style="
-            margin-left: 15vw;
-            margin-right: 15vw;
-            padding-bottom: 5vh;
-            padding-top: 5vh;
-            color: #ffffff;
-          "
-        >
-          İletişim
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 contact-area">
-              <div class="contact-header">Telefon</div>
-              <div class="contact-text">
-                <a
-                  class="info-item"
-                  style="color: #ffffff; font-weight: 300"
-                  href="tel:+905438234142"
-                  >0543 823 41 42</a
-                >
-              </div>
-              <div class="contact-header mt-sm-5">Adres</div>
-              <div
-                class="contact-text"
-                style="color: #ffffff; font-weight: 300"
+    </header>
+
+    <main>
+      <section class="hero" id="landing">
+        <div class="shell hero-layout">
+          <div class="hero-copy">
+            <p class="kicker">Gölcük, Kocaeli · Diş Hekimi</p>
+            <h1>Özenli tedavi,<br /><em>sakin bir deneyim.</em></h1>
+            <p class="hero-lead">
+              İhtiyacınızı dinleyen, seçenekleri açıkça anlatan ve her adımda
+              kendinizi güvende hissettiren bir diş hekimliği deneyimi.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="tel:+905438234142">
+                <span class="button-icon">↗</span> Randevu için arayın
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47"
+                target="_blank"
+                rel="noreferrer"
               >
-                Merkez Mahallesi Mareşal Fevzi Çakmak Caddesi No:28/B Kat:2
-                Gölcük/Kocaeli
-              </div>
+                Yol tarifi <span>↗</span>
+              </a>
             </div>
-            <div class="col-sm-6">
-              <iframe
-                class="mobile-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.876762212544!2d29.81820227587352!3d40.720729371392245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb4509d23575c5%3A0xf607a5ea4468cff6!2sCeren%20Dik%20U%C3%A7al%20Muayenehanesi!5e0!3m2!1str!2str!4v1714817319082!5m2!1str!2str"
-                width="600"
-                height="450"
-                style="border: 0; border-radius: 15px"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div class="hero-proof">
+              <div><strong>2016</strong><span>yılından beri Gölcük'te</span></div>
+              <div><strong>2020</strong><span>muayenehanenin kuruluşu</span></div>
             </div>
           </div>
+
+          <div class="hero-media">
+            <img src="img/clinic/03-room-close.jpg" alt="Ceren Dik Uçal muayenehanesinin modern tedavi odası" />
+            <div class="media-caption">
+              <span class="clinic-status-dot" id="clinic-status-dot" aria-hidden="true"></span>
+              <p>
+                <strong>Özel Ceren Dik Uçal Muayenehanesi</strong>
+                <small><span class="clinic-status-label" id="clinic-status-label" aria-live="polite">Pzt–Cmt 10:00–18:00</span> · Gölcük · Kocaeli</small>
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div class="shell practical-info" aria-label="Pratik bilgiler">
+          <a href="tel:+905438234142"><small>Telefon</small><strong>0543 823 41 42</strong><span>↗</span></a>
+          <div><small>Çalışma saatleri</small><strong>Pzt–Cmt 10:00–18:00</strong></div>
+          <a href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer"><small>Konum</small><strong>Merkez Mahallesi, Gölcük</strong><span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="shell about-layout">
+          <div class="about-image">
+            <img src="img/clinic/04-waiting.jpg" alt="Kliniğin yeşil koltuklu bekleme alanı" />
+          </div>
+          <div class="about-copy">
+            <p class="kicker">Yaklaşımımız</p>
+            <h2>Önce sizi dinler,<br />sonra birlikte planlarız.</h2>
+            <p>
+              Diş Hekimi Ceren Dik Uçal, Bolu Abant İzzet Baysal Üniversitesi
+              Diş Hekimliği Fakültesi'nden 2016 yılında mezun oldu. 2016'dan
+              beri Gölcük'te hastalarına hizmet veriyor.
+            </p>
+            <p>
+              2020 yılında kurulan muayenehane; anlaşılır iletişimi, kişiye özel
+              tedavi planını ve uzun vadeli ağız sağlığını merkezine alıyor.
+            </p>
+            <ul class="principles">
+              <li><span>01</span> Açık ve anlaşılır bilgilendirme</li>
+              <li><span>02</span> Kişiye özel tedavi planı</li>
+              <li><span>03</span> Koruyucu ve uzun vadeli yaklaşım</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section treatments" id="treatments">
+        <div class="shell">
+          <div class="section-heading">
+            <div><p class="kicker">Tedaviler</p><h2>İhtiyacınıza uygun<br />çözümler.</h2></div>
+            <p>Koruyucu uygulamalardan estetik çözümlere, ağız sağlığınız için kapsamlı hizmet.</p>
+          </div>
+
+          <div class="treatment-grid">
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#composite"></use></svg><div><h3>Kompozit Dolgu</h3><p>Çürük veya hasarlı dişleri doğal renge uyumlu materyalle onarır.</p></div><span>01</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#root-canal"></use></svg><div><h3>Kanal Tedavisi</h3><p>Enfekte dokuyu temizleyerek doğal dişin korunmasına yardımcı olur.</p></div><span>02</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#cleaning"></use></svg><div><h3>Diş Temizliği</h3><p>Plak ve diş taşlarını uzaklaştırarak diş eti sağlığını destekler.</p></div><span>03</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#whitening"></use></svg><div><h3>Diş Beyazlatma</h3><p>Diş rengini kontrollü biçimde açarak aydınlık bir gülüş sağlar.</p></div><span>04</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#prosthesis"></use></svg><div><h3>Protez</h3><p>Eksik dişlerin işlevini ve görünümünü uygun çözümlerle tamamlar.</p></div><span>05</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#extraction"></use></svg><div><h3>Diş Çekimi</h3><p>Korunamayan dişler için planlı ve kontrollü çekim uygulanır.</p></div><span>06</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#aesthetic"></use></svg><div><h3>Estetik Dolgu</h3><p>Küçük kırık, çatlak ve aralıkları diş rengine uyumlu biçimde düzenler.</p></div><span>07</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#zirconium"></use></svg><div><h3>Zirkonyum Kaplama</h3><p>Dayanıklılık ile doğal görünümü bir araya getiren bir seçenektir.</p></div><span>08</span></article>
+            <article class="treatment-card"><svg class="treatment-icon" aria-hidden="true"><use href="img/treatment-icons.svg#ceramic"></use></svg><div><h3>Seramik Kaplama</h3><p>Dişlerin şekil, renk ve görünümünü iyileştiren ince kaplamalardır.</p></div><span>09</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="shell">
+          <div class="section-heading">
+            <div><p class="kicker">Klinik</p><h2>Sade, aydınlık,<br />huzurlu.</h2></div>
+            <p>Gölcük merkezde, konforlu bir tedavi deneyimi düşünülerek tasarlanmış muayenehanemiz.</p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-main"><img src="img/clinic/02-room-wide.jpg" alt="Kliniğin geniş tedavi odası" /></figure>
+            <figure><img src="img/clinic/01-room-main.jpg" alt="Kliniğin aydınlık tedavi ünitesi" /></figure>
+            <figure><img src="img/clinic/05-waiting-hall.jpg" alt="Kliniğin bekleme salonu" /></figure>
+            <figure class="gallery-tall"><img src="img/clinic/06-corridor.jpg" alt="Kliniğin aydınlık koridoru" /></figure>
+            <figure><img src="img/clinic/07-room-blue.jpg" alt="Mavi koltuklu tedavi odası" /></figure>
+            <figure><img src="img/clinic/08-room-blue-close.jpg" alt="Tedavi odasının yakından görünümü" /></figure>
+            <figure class="gallery-wide"><img src="img/clinic/09-room-blue-side.jpg" alt="İkinci tedavi odası" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews" id="comments">
+        <div class="shell">
+          <div class="reviews-heading">
+            <p class="kicker">Google yorumları</p>
+            <h2>Deneyimlerini<br />onlardan dinleyin.</h2>
+            <p>Google Maps üzerinde hastalarımızın paylaştığı gerçek deneyimlerden kısa alıntılar.</p>
+            <a class="review-summary" href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer" aria-label="Google Maps'teki tüm yorumları aç">
+              <span class="review-summary-brand"><img src="img/google-g.svg" alt="" /><strong>Google yorumları</strong></span>
+              <span class="review-summary-score"><strong>5,0</strong><span class="review-stars" aria-label="5 yıldız">★★★★★</span></span>
+              <small>16 değerlendirme</small>
+              <span class="review-stack" aria-hidden="true"><span>C</span><span>T</span><span>E</span><span>S</span><span>A</span><span>+11</span></span>
+              <span class="review-summary-link">Tüm yorumları görün <b>↗</b></span>
+            </a>
+          </div>
+          <div class="review-grid">
+            <a class="review-card" href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer" aria-label="Coşkun K yorumunu Google Maps'te görüntüle">
+              <div class="review-card-head"><span class="review-avatar">C</span><strong>Coşkun K.</strong></div>
+              <div class="review-stars" aria-label="5 yıldız">★★★★★</div>
+              <blockquote>“Ceren Hanım’ın iş disiplini, titizliği ve tedavilerinden memnun kaldım. Tedavi öncesinde ve sonrasında bilgilendirdi.”</blockquote>
+            </a>
+            <a class="review-card" href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer" aria-label="Tevfik B yorumunu Google Maps'te görüntüle">
+              <div class="review-card-head"><span class="review-avatar">T</span><strong>Tevfik B.</strong></div>
+              <div class="review-stars" aria-label="5 yıldız">★★★★★</div>
+              <blockquote>“Tek kelimeyle harika. Hiç ağrı duymadan kanal tedavim ve dolgum yapıldı. Hocamız çok ilgilendi ve sürekli bilgilendirdi.”</blockquote>
+            </a>
+            <a class="review-card" href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer" aria-label="Ezgi Ç yorumunu Google Maps'te görüntüle">
+              <div class="review-card-head"><span class="review-avatar">E</span><strong>Ezgi Ç.</strong></div>
+              <div class="review-stars" aria-label="5 yıldız">★★★★★</div>
+              <blockquote>“Gerçekten çok memnun kaldığım bir tedavi gördüm. Kesinlikle tavsiye ediyorum. Muayenehanesi çok temiz ve ferah.”</blockquote>
+            </a>
+            <a class="review-card" href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer" aria-label="Serra E yorumunu Google Maps'te görüntüle">
+              <div class="review-card-head"><span class="review-avatar">S</span><strong>Serra E.</strong></div>
+              <div class="review-stars" aria-label="5 yıldız">★★★★★</div>
+              <blockquote>“Sürekli bilgi vererek korkmanıza engel olacak yaklaşımıyla, işini titizlikle yapan bir hekim. Dolgu için gittim, memnun kaldım.”</blockquote>
+            </a>
+            <a class="review-card review-card-wide" href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer" aria-label="Aysel C yorumunu Google Maps'te görüntüle">
+              <div class="review-card-head"><span class="review-avatar">A</span><strong>Aysel C.</strong></div>
+              <div class="review-stars" aria-label="5 yıldız">★★★★★</div>
+              <blockquote>“Hayatımda ilk defa diş doktoruna gittim, hiç korkmadım. Hastayı bilgilendirme, hijyen ve ilgi gerçekten çok iyiydi.”</blockquote>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="shell contact-panel">
+          <div class="contact-copy">
+            <p class="kicker">İletişim</p>
+            <h2>Randevunuzu<br />birlikte planlayalım.</h2>
+            <p>Sorularınız ve randevu talebiniz için bizi arayabilir, kliniğe yol tarifi alabilirsiniz.</p>
+            <div class="contact-actions">
+              <a class="button button-primary" href="tel:+905438234142">Randevu için arayın</a>
+              <a class="button button-secondary" href="https://maps.app.goo.gl/gBfRVj8PLaLRXXP47" target="_blank" rel="noreferrer">Yol tarifi <span>↗</span></a>
+            </div>
+            <dl class="contact-details">
+              <div><dt>Telefon</dt><dd><a href="tel:+905438234142">0543 823 41 42</a></dd></div>
+              <div><dt>Adres</dt><dd>Merkez Mah. Mareşal Fevzi Çakmak Cad.<br />No:28/B Kat:2, Gölcük / Kocaeli</dd></div>
+              <div><dt>Saatler</dt><dd>Pzt–Cmt 10:00–18:00</dd></div>
+            </dl>
+          </div>
+          <div class="map-wrap">
+            <iframe
+              title="Ceren Dik Uçal Muayenehanesi konumu"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.876762212544!2d29.81820227587352!3d40.720729371392245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb4509d23575c5%3A0xf607a5ea4468cff6!2sCeren%20Dik%20U%C3%A7al%20Muayenehanesi!5e0!3m2!1str!2str!4v1714817319082!5m2!1str!2str"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="shell faq-layout">
+          <div class="faq-heading"><p class="kicker">Sıkça sorulanlar</p><h2>Merak<br />ettikleriniz.</h2><p>Aradığınız yanıt burada yoksa bize telefonla ulaşabilirsiniz.</p></div>
+          <div class="accordion">
+            <details open><summary>Diş taşı temizliği dişlerime zarar verir mi?<span>+</span></summary><p>Diş taşı temizliği dişlere zarar vermez; plak ve diş taşlarını uzaklaştırarak diş ve diş eti sağlığının korunmasına yardımcı olur.</p></details>
+            <details><summary>Dişlerimi nasıl fırçalamalıyım?<span>+</span></summary><p>Diş fırçasını diş eti ile diş arasına yaklaşık 45 derece açıyla yerleştirin. Küçük dairesel hareketlerle tüm yüzeyleri ve dilinizi en az iki dakika fırçalayın.</p></details>
+            <details><summary>Kanal tedavisi ne kadar sürer, ağrılı mıdır?<span>+</span></summary><p>Kanal tedavisi çoğunlukla 1–3 seansta tamamlanır. Lokal anestezi sayesinde işlem sırasında genellikle ağrı hissedilmez; sonrasında geçici hassasiyet olabilir.</p></details>
+            <details><summary>Diş beyazlatma kalıcı mıdır?<span>+</span></summary><p>Sonucun kalıcılığı kişiye ve yaşam alışkanlıklarına göre değişir. Düzenli ağız bakımı ve renklendirici ürünleri sınırlamak kalıcılığı artırabilir.</p></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <a class="brand" href="#landing"><img src="img/logo.svg?v=4" alt="" /><span><strong>Ceren Dik Uçal</strong><small>Diş Hekimi</small></span></a>
+        <p>Gülüşünüz için özenli bir yaklaşım.</p>
+        <span>© 2026 Ceren Dik Uçal</span>
       </div>
-      <div class="faq mb-5" id="faq">
-        <div class="section-header mt-3 mb-3" style="color: #4285f4">
-          SSS-Sıkça Sorulan Sorular
-        </div>
-        <div class="faq-wrapper">
-          <div class="faq-header">
-            Diş taşı temizliği dişlerime zarar verir mi?
-          </div>
-          <div class="faq-text">
-            Diş taşı temizleme işlemi, dişlerinize zarar vermez; aksine, diş ve
-            diş eti sağlığınızı korur. Profesyonel diş temizliği, diş taşlarını
-            ve plakları uzaklaştırarak diş çürümesi ve diş eti hastalıklarını
-            önler. Diş hekiminizin yönlendirmesiyle düzenli olarak diş taşı
-            temizletmek, ağız sağlığınızı korumanıza yardımcı olur.
-          </div>
-        </div>
-        <div class="faq-wrapper mt-4">
-          <div class="faq-header">Dişlerimi nasıl fırçalamalıyım?</div>
-          <div class="faq-text">
-            Diş fırçasını 45 derece açıyla diş eti ile diş arasına yerleştirin.
-            Hafifçe bastırarak küçük dairesel hareketlerle her bir dişi
-            kapsayacak şekilde fırçalayın. Üst ve alt çenelerinizi ayrı ayrı
-            fırçalayın, dişlerinizin iç ve dış yüzeylerini unutmayın ve dilinizi
-            de fırçalayarak ağız hijyeninizi tamamlayın. En az iki dakika
-            boyunca her gün bu yöntemi uygulayarak, diş çürümelerini ve diğer
-            oral sağlık sorunlarını önleyebilirsiniz.
-          </div>
-        </div>
-        <div class="faq-wrapper mt-4">
-          <div class="faq-header">
-            Kanal tedavisi ne kadar sürer? Ağrılı bir işlem mi?
-          </div>
-          <div class="faq-text">
-            Kanal tedavisi genellikle 1 ila 3 seansta tamamlanır ve her seans
-            yaklaşık 1 saat sürer. İşlem sırasında genellikle ağrı hissedilmez
-            çünkü lokal anestezi uygulanır. Ancak işlemden sonra hafif bir
-            rahatsızlık veya hassasiyet olabilir, ancak bu genellikle geçicidir.
-          </div>
-        </div>
-        <div class="faq-wrapper mt-4">
-          <div class="faq-header">
-            Diş beyazlatma işlemi ne kadar sürede etkili olur ve kalıcı mıdır?
-          </div>
-          <div class="faq-text">
-            Diş beyazlatma işlemi genellikle birkaç seanslık bir süreçtir ve her
-            seansta belirgin bir etki görülebilir, ancak tam sonuçlar genellikle
-            birkaç hafta içinde ortaya çıkar. Beyazlatma sonuçları kişiden
-            kişiye değişebilir ve yaşam tarzına bağlı olarak kalıcılığı
-            etkilenebilir; düzenli diş bakımı ve sigara, kahve gibi
-            renklendirici maddelerden kaçınmak sonucun kalıcılığını artırabilir.
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => link.closest("details").removeAttribute("open"));
+      });
+
+      const updateClinicStatus = () => {
+        const parts = new Intl.DateTimeFormat("en-GB", {
+          timeZone: "Europe/Istanbul",
+          weekday: "short",
+          hour: "2-digit",
+          minute: "2-digit",
+          hourCycle: "h23",
+        }).formatToParts(new Date());
+        const valueOf = (type) => parts.find((part) => part.type === type)?.value;
+        const weekday = valueOf("weekday");
+        const minutes = Number(valueOf("hour")) * 60 + Number(valueOf("minute"));
+        const isWorkingDay = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].includes(weekday);
+        const isOpen = isWorkingDay && minutes >= 10 * 60 && minutes < 18 * 60;
+        const dot = document.getElementById("clinic-status-dot");
+        const label = document.getElementById("clinic-status-label");
+
+        dot.classList.toggle("is-open", isOpen);
+        dot.classList.toggle("is-closed", !isOpen);
+        label.classList.toggle("is-open", isOpen);
+        if (isOpen) {
+          label.textContent = "Bugün 18:00’e kadar açık";
+        } else if (isWorkingDay && minutes < 10 * 60) {
+          label.textContent = "Bugün 10:00’da açılır";
+        } else if (weekday === "Sat" || weekday === "Sun") {
+          label.textContent = "Pazartesi 10:00’da açılır";
+        } else {
+          label.textContent = "Yarın 10:00’da açılır";
+        }
+      };
+
+      updateClinicStatus();
+      window.setInterval(updateClinicStatus, 60000);
+    </script>
   </body>
 </html>

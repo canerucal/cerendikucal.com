@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="composite" viewBox="0 0 96 96">
+    <path d="M29 21c8-7 14-1 19-1s11-6 19 1c10 9 3 23-1 34-5 13-7 23-13 23-5 0-3-18-5-18s0 18-5 18c-6 0-8-10-13-23-4-11-11-25-1-34Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="M56 27c6 3 8 8 7 14-1 4-3 7-5 11l-13-7 3-14 8-4Z" fill="#9DD5F0" stroke="#347FB2" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="root-canal" viewBox="0 0 96 96">
+    <path d="M29 21c8-7 14-1 19-1s11-6 19 1c10 9 3 23-1 34-5 13-7 23-13 23-5 0-3-18-5-18s0 18-5 18c-6 0-8-10-13-23-4-11-11-25-1-34Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="M48 29v30m0 0-8 13m8-13 8 13" fill="none" stroke="#347FB2" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="48" cy="28" r="4" fill="#9DD5F0"/>
+  </symbol>
+  <symbol id="cleaning" viewBox="0 0 96 96">
+    <path d="M30 26c7-6 12-1 18-1s11-5 18 1c9 8 3 20 0 29-4 12-7 20-12 20-5 0-3-16-6-16s-1 16-6 16c-5 0-8-8-12-20-3-9-9-21 0-29Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="m67 15 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Zm-40 2 1.5 4.5L33 23l-4.5 1.5L27 29l-1.5-4.5L21 23l4.5-1.5L27 17Z" fill="#78C4EA" stroke="#347FB2" stroke-width="1.5" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="whitening" viewBox="0 0 96 96">
+    <path d="M20 38c8 14 19 21 28 21s20-7 28-21" fill="none" stroke="#347FB2" stroke-width="3" stroke-linecap="round"/>
+    <path d="M27 42c4 15 11 25 21 25s17-10 21-25" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="m70 17 2.5 7.5L80 27l-7.5 2.5L70 37l-2.5-7.5L60 27l7.5-2.5L70 17Z" fill="#9DD5F0" stroke="#347FB2" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="prosthesis" viewBox="0 0 96 96">
+    <path d="M17 41c5-16 17-24 31-24s26 8 31 24c-8 9-19 14-31 14S25 50 17 41Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="M22 43c7 14 15 22 26 22s19-8 26-22" fill="none" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="M32 26v25m16-31v35m16-29v25" fill="none" stroke="#347FB2" stroke-width="2"/>
+  </symbol>
+  <symbol id="extraction" viewBox="0 0 96 96">
+    <path d="M30 24c7-6 12-1 18-1s11-5 18 1c9 8 3 21 0 31-4 12-7 20-12 20-5 0-3-17-6-17s-1 17-6 17c-5 0-8-8-12-20-3-10-9-23 0-31Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="M48 49V15m0 0-8 8m8-8 8 8" fill="none" stroke="#347FB2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="aesthetic" viewBox="0 0 96 96">
+    <path d="M30 24c7-6 12-1 18-1s11-5 18 1c9 8 3 21 0 31-4 12-7 20-12 20-5 0-3-17-6-17s-1 17-6 17c-5 0-8-8-12-20-3-10-9-23 0-31Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="M36 45c7 6 17 6 24 0" fill="none" stroke="#347FB2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="m70 18 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" fill="#78C4EA"/>
+  </symbol>
+  <symbol id="zirconium" viewBox="0 0 96 96">
+    <path d="M31 28c7-6 11-1 17-1s10-5 17 1c8 7 3 19 0 28-4 11-7 18-11 18-5 0-3-15-6-15s-1 15-6 15c-4 0-7-7-11-18-3-9-8-21 0-28Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="m27 27 8-11h26l8 11-21 15-21-15Z" fill="#9DD5F0" fill-opacity=".65" stroke="#347FB2" stroke-width="2" stroke-linejoin="round"/>
+    <path d="m35 16 13 26 13-26" fill="none" stroke="#347FB2" stroke-width="1.8"/>
+  </symbol>
+  <symbol id="ceramic" viewBox="0 0 96 96">
+    <path d="M25 27c7-6 11-1 17-1s10-5 17 1c8 7 3 19 0 28-4 11-7 18-11 18-5 0-3-15-6-15s-1 15-6 15c-4 0-7-7-11-18-3-9-8-21 0-28Z" fill="#E7F5FC" stroke="#347FB2" stroke-width="2.5"/>
+    <path d="M43 25c6-4 10 0 15 0s9-4 15 2c7 7 2 18-1 26-3 9-5 15-9 17" fill="none" stroke="#78C4EA" stroke-width="2.5" stroke-linecap="round"/>
+  </symbol>
+</svg>
