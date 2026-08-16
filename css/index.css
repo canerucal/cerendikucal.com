@@ -81,7 +81,7 @@ button, summary { font: inherit; }
 .header-action span { font-size: 15px; }
 .mobile-menu { display: none; }
 
-.hero { position: relative; overflow: hidden; padding: 78px 0 0; }
+.hero { position: relative; overflow: hidden; padding: clamp(36px, 6svh, 78px) 0 0; }
 .hero::after {
   position: absolute;
   z-index: -1;
@@ -160,7 +160,7 @@ h2 { font-size: clamp(44px, 4.2vw, 60px); }
 .hero-media {
   position: relative;
   overflow: hidden;
-  height: 570px;
+  height: clamp(460px, calc(100svh - 150px), 570px);
   border-radius: 180px 180px 24px 24px;
   background: var(--sage-pale);
 }
