@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cerendikucal.com/sitemap.xml
+Sitemap: https://cerendikucal.netlify.app/sitemap.xml
