@@ -491,7 +491,7 @@ body.mobile-menu-open .mobile-contact-dock { opacity: 0; visibility: hidden; poi
 .signature-brand { display: inline-flex; align-items: center; flex-shrink: 0; }
 .signature-brand img { display: block; width: 210px; height: auto; max-width: none; }
 @media(max-width:860px) {
-  .header-inner .signature-brand { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+  .header-inner .signature-brand { position: absolute; inset: 0; width: max-content; height: max-content; margin: auto; }
   .signature-brand img { width: 190px; }
 }
 @media(max-width:620px) {
