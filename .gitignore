@@ -2,3 +2,14 @@
 .netlify
 dist/
 node_modules/
+
+# Local reports, working notes and private automation.
+/reports/
+/private/
+/scripts/local/
+
+# Local credentials and environment overrides.
+.env
+.env.*
+!.env.example
+*.log

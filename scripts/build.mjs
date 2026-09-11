@@ -1,4 +1,4 @@
-import { cp, mkdir, rm, readFile, writeFile, readdir } from 'node:fs/promises';
+import { cp, mkdir, rm, readFile, writeFile, readdir, lstat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { transform } from 'esbuild';
 import { fileURLToPath } from 'node:url';
@@ -13,7 +13,19 @@ await mkdir(output, { recursive: true });
 for (const entry of ['index.html', 'favicon.ico', 'robots.txt', 'sitemap.xml', 'js', 'img', 'fonts']) {
   await cp(path.join(root, entry), path.join(output, entry), {
     recursive: true,
-    filter: source => path.basename(source) !== '.DS_Store',
+    filter: async source => {
+      const relative = path.relative(root, source);
+      if (relative.split(path.sep).some(part => part.startsWith('.'))) return false;
+      const info = await lstat(source);
+      if (info.isSymbolicLink()) return false;
+      if (info.isDirectory()) return true;
+      // Asset folders are public, but notes/configuration accidentally placed
+      // beside assets must never become part of the deployment.
+      if (entry === 'js') return ['js/gallery.js', 'js/motion.js'].includes(relative);
+      if (entry === 'img') return /\.(svg|png|jpg|jpeg|webp|avif|ico)$/i.test(source);
+      if (entry === 'fonts') return /\.woff2$/i.test(source) || relative === 'fonts/OFL.txt';
+      return relative === entry;
+    },
   });
 }
 // This single-page site's small stylesheet stays inline to avoid render-blocking
