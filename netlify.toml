@@ -1,3 +1,9 @@
 [build]
   command = "node scripts/build.mjs"
   publish = "dist"
+
+[[redirects]]
+  from = "https://cerendikucal.netlify.app/*"
+  to = "https://cerendikucal.com/:splat"
+  status = 301
+  force = true
