@@ -5,8 +5,12 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   slides.forEach(slide => {
     const img = slide.querySelector('img');
-    slide.style.setProperty('--photo', 'url("' + img.src + '")');
     slide.style.setProperty('--ratio', Number(img.getAttribute('width')) / Number(img.getAttribute('height')));
+    const syncPhoto = () => slide.style.setProperty('--photo', 'url("' + (img.currentSrc || img.src) + '")');
+    // Wait for the lazy image to load instead of fetching every CSS background
+    // during startup. Reuse the browser's chosen responsive resource.
+    img.addEventListener('load', syncPhoto);
+    if (img.complete && img.naturalWidth) syncPhoto();
   });
   let active = 0;
   let frame;

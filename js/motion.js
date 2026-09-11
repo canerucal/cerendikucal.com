@@ -14,10 +14,11 @@
         observer.unobserve(entry.target);
       }
     }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
-    targets.forEach(el => {
+    const belowFold = [...targets].map(el => el.getBoundingClientRect().top >= window.innerHeight);
+    targets.forEach((el, index) => {
       el.classList.add('motion-reveal');
       // Never hide already visible content, including direct anchor navigation.
-      if (el.getBoundingClientRect().top >= window.innerHeight) {
+      if (belowFold[index]) {
         el.classList.add('motion-pending');
         observer.observe(el);
       }
